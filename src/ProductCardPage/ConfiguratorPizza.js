@@ -1,6 +1,5 @@
-import React, { useState} from "react";
-
-import FormRezult from "./FormRezult"
+import React, { useState } from "react";
+import FormRezult from "./FormResult"
 
 function ConfiguratorPizza() {
   const [price, setPrice] = useState(200);
@@ -37,10 +36,9 @@ function ConfiguratorPizza() {
     setOdata(calcPrice());
   }
 
-
   return (
     <>
-      {rezult&&<FormRezult data={oData} price={price} />}
+      {rezult && <FormRezult data={oData} price={price} />}
       <form id="formElement" onChange={calcPrice} onSubmit={sendForm}>
       Размеры:
       <input type="radio" name="size" value="size30" defaultChecked />30 cm

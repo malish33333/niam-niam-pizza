@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FormRezult({data, price}) {
+export default function FormResult({data, price}) {
   return (
     <>
       <div>
